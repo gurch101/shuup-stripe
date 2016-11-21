@@ -3,7 +3,7 @@
 {% call service_provider_section(
     identifier=form_def.name,
     header="Stripe",
-    description=gettext("Accept credit cards using <a target='_blank' href='%(url)s'>Stripe</a>", url="https://stripe.com/")
+    description=gettext("Accept credit cards using <a target='_blank' href='%(url)s'>Stripe</a>. Stripe helps you create any type of payments flow - from e-commerce to recurring billing and everything in between. Collect payment information easily and securely on web or mobile. Stripe supports 100+ currencies out of the box.", url="https://stripe.com/")
 )%}
     {% set form = pane.forms[form_def.name] %}
     <input type="hidden" name="{{ form.name.html_name }}" value="Stripe">
